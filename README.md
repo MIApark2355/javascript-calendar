@@ -1,6 +1,6 @@
 # javascript-calendar
 
-Link: ec2-3-138-112-230.us-east-2.compute.amazonaws.com/Module6-group/main.html
+Link: ec2-3-138-112-230.us-east-2.compute.amazonaws.com/~MiaPark/Module6-group/main.html
 
 AJAX Calendar:
 1. Calendar View:
