@@ -11,6 +11,8 @@ AJAX Calendar:
     b. The user can view different months as far in the past or future as desired
     
 2. User and Event Management:
+
+
 ![image](https://user-images.githubusercontent.com/112423825/230689557-c9e387c7-275c-44e7-9836-f58df9db5f7e.png)
 
     a. Events can be added, modified, and deleted
@@ -22,8 +24,9 @@ AJAX Calendar:
     
 3. Other
 
-    a. Users can tag an event with either "business" or "personal" and enable/disable those tags in the calendar view. 
-    ![image](https://user-images.githubusercontent.com/112423825/230689603-4e439c6b-be35-4116-88ef-fa671768862e.png)\
 
+ ![image](https://user-images.githubusercontent.com/112423825/230689603-4e439c6b-be35-4116-88ef-fa671768862e.png)
+ 
+    a. Users can tag an event with either "business" or "personal" and enable/disable those tags in the calendar view. 
     b. Users can share their calendar with additional users. 
     c. Users can click today to view this month's calendar, and go to other month when they type mm/yyyy and click go to.
