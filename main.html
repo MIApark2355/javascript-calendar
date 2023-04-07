@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Event Calendar</h1>
+        <div class = "tag">
+            <input type="radio" name="tag" class="all_events" id="t2" >All Events
+            <input type="radio" name="tag" class="business_tag" id="t0" value="business">Business Only
+            <input type="radio" name="tag" class="personal_tag" id="t1" value="personal">Personal Only
+        </div>
+    </div>
+        
+    <div class="container">
+        <div class="left">
+            <div class="name_container"></div>
+            <div class="sign_container"> 
+                    <div class = "sign_in">
+                        <h2>Sign In</h2>
+                            <input type = "text" id="username" name="username" placeholder="Enter the username"><br>
+                            <input type = "password" id = "password" name = "password" placeholder="Enter the password"><br>
+                            <button class="login_button" id="login_button">LOG IN</button>
+                            
+                
+                    </div>
+                    
+                    <div class="sign_up">
+                    <h2>Sign Up</h2>
+                            <input type = "text" id="newUser" name="newUser" placeholder="Enter a new username"><br>
+                            <input type = "password" id = "newPwd" placeholder="password" name = "newPwd" ><br>
+                            <input type = "password" id = "checkPwd" placeholder="confirm" name = "checkPwd"><br>
+                            <button class="signup_button" id="signup_button">REGISTER</button>
+                    </div>
+                <button class="logout_button" id="logout_button">LOG OUT</button>
+
+            </div>
+            <div class="pickDate">
+                <div class="goTo">
+                    <input type="text" placeholder="mm/yyyy" class="date_input">
+                    <button class="goTo_btn">GO</button>
+                </div>
+                <button class="today_btn">TODAY</button>
+                <div class="share_container">
+                    <h4>Share calendar!</h4>
+                    <input type="text" placeholder="username" class = "share_user" id="share_user">
+                    <button class="share_btn" id="share_btn">SHARE</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="middle">
+            
+            <div class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left
+                    prev"></i>
+                    <div class="date">
+                        <h2>placeholder</h2>
+                        <h1>placeholder</h1>
+                        <p></p>
+                    </div>
+                    <i class="fas fa-angle-right
+                    next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days">
+
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="right">
+            <div class="picked_date_container">
+                <div class="event_day"></div>
+                <div class="event_date"></div>
+            </div>
+            <div class="events">
+        </div>
+        
+        <div class="edit_event_popup">
+            <div class="edit_event_title_container">
+                <i class="fas fa-times close_edit"></i>
+                <div class="title">Edit Event</div>
+                
+            </div>
+            <div class="edit_event_box">
+                <form>
+                <div class="input">
+                    <label>Event</label>
+                    <input type="text" class="edit_event_name" placeholder="name">
+                </div>
+                <div class="input">
+                    <label>Start</label>
+                    <input type="text" class="edit_event_start" placeholder="Time">
+                </div>
+                <div class="input">
+                    <label>End</label>
+                    <input type="text" class="edit_event_end" placeholder="Time">
+                </div>
+                <div class="radio">
+                    <label>Type   </label>
+                    <input type="radio" name="type" class="edit_event_type0" id="e0" value="business">business
+                    <input type="radio" name="type" class="edit_event_type1" id="e1" value="personal">personal
+                </div>
+            </form>
+            </div>
+            <div class="edit_event_btn_container">
+                <button class="confirm_btn">Edit Event</button>
+            </div>
+        </div>
+            
+            <div class="add_event_popup">
+                <div class="add_event_title_container">
+                    <i class="fas fa-times close_add"></i>
+                    <div class="title">Add Event</div>
+                    
+                </div>
+                <div class="add_event_box">
+                    <form>
+                    <div class="input">
+                        <label>Event</label>
+                        <input type="text" class="event_name" placeholder="name">
+                    </div>
+                    <div class="input">
+                        <label>Start</label>
+                        <input type="text" class="event_start" placeholder="Time">
+                    </div>
+                    <div class="input">
+                        <label>End</label>
+                        <input type="text" class="event_end" placeholder="Time">
+                    </div>
+                    <div class="radio">
+                        <label>Type   </label>
+                        <input type="radio" name="type" class="event_type" id="a0" value="business">business
+                        <input type="radio" name="type" class="event_type" id="a1" value="personal">personal
+                    </div>
+                </form>
+                </div>
+                <div class="add_event_btn_container">
+                    <button class="add_btn">Add Event</button>
+                </div>
+            </div>
+            <button class="to_add_btn">Click here to add event</button>
+        </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="register.js"></script> 
+    <script src="calendar.js"></script>
+    <script src="Logout.js"></script>
+</body>
+</html>
