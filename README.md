@@ -4,7 +4,7 @@ Link: ec2-3-138-112-230.us-east-2.compute.amazonaws.com/~MiaPark/Module6-group/m
 
 AJAX Calendar:
 1. Calendar View:
-2. 
+ 
 ![image](https://user-images.githubusercontent.com/112423825/230689446-f6c49f12-ca00-4198-8ede-08081b31c1ac.png)
 
     a. The calendar is displayed as a table grid with days as the columns and weeks as the rows, one month at a time
