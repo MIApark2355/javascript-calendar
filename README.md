@@ -18,8 +18,7 @@ AJAX Calendar:
     e. Refreshing the page does not log a user out
 3. Other
     a. Users can tag an event with either "business" or "personal" and enable/disable those tags in the calendar view. 
-    ![image](https://user-images.githubusercontent.com/112423825/230689603-4e439c6b-be35-4116-88ef-fa671768862e.png)
-    ![image](https://user-images.githubusercontent.com/112423825/230689623-c99f5397-d138-4e1b-95c6-5800c6068739.png)
+    ![image](https://user-images.githubusercontent.com/112423825/230689603-4e439c6b-be35-4116-88ef-fa671768862e.png)\
 
     b. Users can share their calendar with additional users. 
     c. Users can click today to view this month's calendar, and go to other month when they type mm/yyyy and click go to.
