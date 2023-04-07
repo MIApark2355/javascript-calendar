@@ -8,7 +8,6 @@ AJAX Calendar:
     a. The calendar is displayed as a table grid with days as the columns and weeks as the rows, one month at a time
     b. The user can view different months as far in the past or future as desired
 2. User and Event Management:
-![image](https://user-images.githubusercontent.com/112423825/230689505-013c00f0-7383-4463-97c1-29e2ebe4476c.png)
 ![image](https://user-images.githubusercontent.com/112423825/230689557-c9e387c7-275c-44e7-9836-f58df9db5f7e.png)
 
     a. Events can be added, modified, and deleted
