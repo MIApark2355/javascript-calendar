@@ -7,7 +7,7 @@ function registerAjax(event){
     // Make a URL-encoded string for passing POST data:
     const data = { 'username': username, 'password': password,"confirm" :confirm };
  
-	fetch("register.php", {
+	fetch("./php/register.php", {
         method: 'POST',
         body: JSON.stringify(data),
         headers: { 'content-type': 'application/json' }

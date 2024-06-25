@@ -5,7 +5,7 @@ function loginAjax(event) {
 
     // Make a URL-encoded string for passing POST data:
     const data = { 'username': username, 'password': password };
-    fetch("searchUser.php", {
+    fetch("./php/searchUser.php", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: { 'content-type': 'application/json' }

@@ -1,6 +1,6 @@
 function logoutAjax (e) {
     
-    fetch("Logout.php", {
+    fetch("./php/Logout.php", {
         method: 'POST',
         body: JSON.stringify(),
         headers: { 'content-type': 'application/json' }

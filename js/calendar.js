@@ -4,7 +4,7 @@ let user="";
 let token;
 function checkLog(){
     //checking if a user has logged in
-fetch("checkLog.php", {
+fetch("./php/checkLog.php", {
 	method: 'POST',
 	body: JSON.stringify(),
 	headers: { 'content-type': 'application/json' }
@@ -471,7 +471,7 @@ function show_events(date){
 function get_event_data (){
 
 
-    fetch("getEvent.php", {
+    fetch("./php/getEvent.php", {
         method: 'POST',
         body: JSON.stringify(),
         headers: { 'content-type': 'application/json' }
@@ -572,7 +572,7 @@ function add_event(e){
     };
     console.log(token);
   
-    fetch("addEvent.php", {
+    fetch("./php/addEvent.php", {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'content-type': 'application/json' }
@@ -621,7 +621,7 @@ function add_delete_function(){
                     'token': token
                 };
                 //console.log(token);
-                fetch("deleteEvent.php", {
+                fetch("./php/deleteEvent.php", {
                     method: 'POST',
                     body: JSON.stringify(data),
                     headers: { 'content-type': 'application/json' }
@@ -771,7 +771,7 @@ function edit_event(e){
       'token':token
     };
   
-    fetch("editEvent.php", {
+    fetch("./php/editEvent.php", {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'content-type': 'application/json' }
@@ -810,7 +810,7 @@ function loginAjax(event) {
 
     // Make a URL-encoded string for passing POST data:
     const data = { 'username': username, 'password': password };
-    fetch("Login.php", {
+    fetch("./php/Login.php", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: { 'content-type': 'application/json' }
@@ -873,7 +873,7 @@ function selectTag(){
       }
         let data1 = {'tag': eventTag};
 
-        fetch("getTag.php", {
+        fetch("./php/getTag.php", {
             method: 'POST',
             body: JSON.stringify(data1),
             headers: { 'content-type': 'application/json' }
@@ -904,7 +904,7 @@ function shareCalendar(){
     let share = {'target_user': shared_user};
 
     let cnt = 0;
-    fetch("checkUser.php", {
+    fetch("./php/checkUser.php", {
         method: 'POST',
         body: JSON.stringify(share),
         headers: { 'content-type': 'application/json' }
@@ -917,7 +917,7 @@ function shareCalendar(){
                     event['target_user'] = shared_user;
                     event['token'] = token;
                     console.log(event);
-                    fetch("shareCalendar.php", {
+                    fetch("./php/shareCalendar.php", {
                         method: 'POST',
                         body: JSON.stringify(event),
                         headers: { 'content-type': 'application/json' }

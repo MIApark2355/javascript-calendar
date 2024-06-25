@@ -487,7 +487,7 @@ function edit_event(e){
   console.log(current_date);
   console.log(current_month + 1);
 
-  fetch("editEvent.php", {
+  fetch("./php/editEvent.php", {
     method: 'POST',
     body: JSON.stringify(data),
     headers: { 'content-type': 'application/json' }
